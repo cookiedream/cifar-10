@@ -1,0 +1,48 @@
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           4,864
+              ReLU-2           [-1, 64, 32, 32]               0
+         MaxPool2d-3           [-1, 64, 16, 16]               0
+            Conv2d-4           [-1, 64, 16, 16]         102,464
+              ReLU-5           [-1, 64, 16, 16]               0
+         MaxPool2d-6             [-1, 64, 8, 8]               0
+            Conv2d-7             [-1, 64, 8, 8]         102,464
+              ReLU-8             [-1, 64, 8, 8]               0
+         MaxPool2d-9             [-1, 64, 4, 4]               0
+           Linear-10                  [-1, 256]         262,400
+             ReLU-11                  [-1, 256]               0
+           Linear-12                  [-1, 128]          32,896
+             ReLU-13                  [-1, 128]               0
+           Linear-14                   [-1, 64]           8,256
+             ReLU-15                   [-1, 64]               0
+           Linear-16                   [-1, 10]             650
+================================================================
+Total params: 513,994
+Trainable params: 513,994
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 1.48
+Params size (MB): 1.96
+Estimated Total Size (MB): 3.46
+----------------------------------------------------------------
+New best model saved at epoch 1 with Test Accuracy: 0.4699
+Epoch 1:  Train Accuracy: 0.3500 Test Accuracy: 0.4699 Train Loss: 1.7453 Test Loss: 1.4609
+New best model saved at epoch 2 with Test Accuracy: 0.5793
+Epoch 2:  Train Accuracy: 0.5200 Test Accuracy: 0.5793 Train Loss: 1.3141 Test Loss: 1.1724
+New best model saved at epoch 3 with Test Accuracy: 0.6376
+Epoch 3:  Train Accuracy: 0.6109 Test Accuracy: 0.6376 Train Loss: 1.0841 Test Loss: 1.0270
+New best model saved at epoch 4 with Test Accuracy: 0.6643
+Epoch 4:  Train Accuracy: 0.6718 Test Accuracy: 0.6643 Train Loss: 0.9244 Test Loss: 0.9493
+New best model saved at epoch 5 with Test Accuracy: 0.6957
+Epoch 5:  Train Accuracy: 0.7129 Test Accuracy: 0.6957 Train Loss: 0.8092 Test Loss: 0.8704
+New best model saved at epoch 6 with Test Accuracy: 0.7235
+Epoch 6:  Train Accuracy: 0.7485 Test Accuracy: 0.7235 Train Loss: 0.7144 Test Loss: 0.8133
+Epoch 7:  Train Accuracy: 0.7839 Test Accuracy: 0.7164 Train Loss: 0.6168 Test Loss: 0.8289
+New best model saved at epoch 8 with Test Accuracy: 0.7417
+Epoch 8:  Train Accuracy: 0.8024 Test Accuracy: 0.7417 Train Loss: 0.5606 Test Loss: 0.7689
+New best model saved at epoch 9 with Test Accuracy: 0.7499
+Epoch 9:  Train Accuracy: 0.8287 Test Accuracy: 0.7499 Train Loss: 0.4898 Test Loss: 0.7605
+Epoch 10:  Train Accuracy: 0.8439 Test Accuracy: 0.7425 Train Loss: 0.4425 Test Loss: 0.7879
+Best Train Accuracy: 0.8439 Best Test Accuracy: 0.7499 Best Train Loss: 0.4425 Best Test Loss: 0.7605
